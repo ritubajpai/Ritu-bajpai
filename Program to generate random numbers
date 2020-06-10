@@ -1,0 +1,21 @@
+#include <iostream>
+#include <cstdlib>
+using namespace std;
+
+int main ()
+{
+  int n, t, c;
+
+  cout << "Enter the number of random numbers you want" << endl;
+  cin >> n;
+
+  cout << "Random numbers are:" << endl;
+
+  for (c = 1; c <= n; c++)
+  {
+    t = random();
+    cout << t << endl;
+  }
+
+  return 0;
+}
