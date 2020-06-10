@@ -1,0 +1,32 @@
+#include <iostream>
+using namespace std;
+void calculator(int a, int b, char op) {
+   switch (op) {
+      case '+': {
+         cout<<"Sum of "<<a<<" and "<<b<<" is "<<a+b<<endl;
+         break;
+      }
+      case '-': {
+         cout<<"Difference of "<<a<<" and "<<b<<" is "<<a-b<<endl;
+         break;
+      }
+      case '*': {
+         cout<<"Product of "<<a<<" and "<<b<<" is "<<a*b<<endl;
+         break;
+      }
+      case '/': {
+         cout<<"Division of "<<a<<" and "<<b<<" is "<<a/b<<endl;
+         break;
+      }
+      default:
+         cout<<"Invalid Input"<<endl;
+   }
+}
+int main() {
+   calculator(5,4,'+');
+   calculator(10,3,'-');
+   calculator(3,2,'*');
+   calculator(20,5,'/');
+   calculator(5,2,'?');
+   return 0;
+}
