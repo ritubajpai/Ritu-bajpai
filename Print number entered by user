@@ -1,0 +1,11 @@
+#include <stdio.h>
+int main()
+{
+   int num;
+   printf("Enter an integer: ");
+   scanf("%d", &num);
+
+   // displaying the value of num using printf
+   printf("The number entered by user is: %d", num);
+   return 0;
+}
